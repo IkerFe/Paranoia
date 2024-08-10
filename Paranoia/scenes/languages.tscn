@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckgjrcuir345r"]
+
+[ext_resource type="Script" path="res://scripts/swinchScene.gd" id="1_mke0p"]
+[ext_resource type="Script" path="res://scripts/pruebaLeng.gd" id="2_s7guf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = 36.0
+offset_right = -5.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button_Scene" type="Button" parent="."]
+z_index = -1
+layout_mode = 0
+offset_left = 369.0
+offset_top = 281.0
+offset_right = 497.0
+offset_bottom = 337.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_mke0p")
+scene_name = "paranoia"
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_s7guf")
+
+[node name="Button_English" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 70.0
+offset_right = 498.0
+offset_bottom = 123.0
+text = "English"
+
+[node name="Button_Spanish" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 145.0
+offset_right = 497.0
+offset_bottom = 201.0
+text = "Español"
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 280.0
+offset_right = 495.0
+offset_bottom = 340.0
+horizontal_alignment = 1
+vertical_alignment = 1

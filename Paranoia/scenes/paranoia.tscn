@@ -1,0 +1,118 @@
+[gd_scene load_steps=10 format=3 uid="uid://bt2ollxjitok6"]
+
+[ext_resource type="Script" path="res://scripts/ButtonTalk.gd" id="1_ndl6i"]
+[ext_resource type="Script" path="res://scripts/Inspect/inspect.gd" id="2_31hqj"]
+[ext_resource type="Texture2D" uid="uid://bdbjxxcg3oekr" path="res://assets/prueb1.png" id="2_ujg86"]
+[ext_resource type="Script" path="res://scripts/Inspect/hideButtons.gd" id="3_233uq"]
+[ext_resource type="Script" path="res://scripts/Inspect/stopInspect.gd" id="3_d85mh"]
+[ext_resource type="Script" path="res://scripts/Inspect/selectObject.gd" id="3_q1ynn"]
+[ext_resource type="Texture2D" uid="uid://c27v4v3ghsxoy" path="res://assets/prueb2.png" id="4_cjpg2"]
+[ext_resource type="Script" path="res://scripts/Dialogue.gd" id="7_dpeca"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8sv1"]
+size = Vector2(550.944, 517.887)
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(0.955, 0.955)
+
+[node name="Buttons" type="Control" parent="."]
+light_mask = 2
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 0
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Talk" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.219895
+anchor_right = 0.219895
+offset_left = 35.0
+offset_top = 355.0
+offset_right = 198.0
+offset_bottom = 417.0
+text = "Talk"
+script = ExtResource("1_ndl6i")
+metadata/_edit_use_anchors_ = true
+
+[node name="Talk2" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.219897
+anchor_right = 0.219895
+offset_left = 451.0
+offset_top = 355.0
+offset_right = 614.0
+offset_bottom = 417.0
+text = "Sleep"
+script = ExtResource("1_ndl6i")
+metadata/_edit_use_anchors_ = true
+
+[node name="Talk3" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.219896
+anchor_right = 0.219896
+offset_left = 659.0
+offset_top = 355.0
+offset_right = 822.0
+offset_bottom = 417.0
+text = "No se"
+script = ExtResource("1_ndl6i")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 0
+offset_left = 819.0
+offset_top = 4.0
+offset_right = 862.0
+offset_bottom = 40.0
+text = "X"
+script = ExtResource("3_d85mh")
+
+[node name="Inspect" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.32016
+anchor_top = 0.0206818
+anchor_right = 2.32016
+anchor_bottom = 0.0206818
+offset_left = 35.0
+offset_top = 355.0
+offset_right = 198.0
+offset_bottom = 417.0
+text = "Inspect"
+script = ExtResource("2_31hqj")
+metadata/_edit_use_anchors_ = true
+
+[node name="HideScript" type="Node" parent="Buttons" node_paths=PackedStringArray("button1", "button2", "button3", "button4", "button_new")]
+script = ExtResource("3_233uq")
+button1 = NodePath("../Talk")
+button2 = NodePath("../Talk2")
+button3 = NodePath("../Talk3")
+button4 = NodePath("../Inspect")
+button_new = NodePath("../Button")
+
+[node name="Prueb1" type="Sprite2D" parent="."]
+position = Vector2(182, 199)
+scale = Vector2(0.181507, 0.181507)
+script = ExtResource("3_q1ynn")
+default_texture = ExtResource("2_ujg86")
+hover_texture = ExtResource("4_cjpg2")
+text_message_unlocked = "Cuchillo"
+
+[node name="Area2D" type="Area2D" parent="Prueb1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Prueb1/Area2D"]
+position = Vector2(6.10352e-05, -33.0568)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_g8sv1")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 39.7906
+offset_top = 99.4764
+offset_right = 284.791
+offset_bottom = 317.476
+script = ExtResource("7_dpeca")

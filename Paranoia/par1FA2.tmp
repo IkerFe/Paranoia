@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=3 uid="uid://bt2ollxjitok6"]
+
+[ext_resource type="Script" path="res://Prueba.gd" id="1_07rrm"]
+[ext_resource type="Texture2D" uid="uid://cxxsj3pswlril" path="res://assets/Botones/Proyecto nuevo (11) (1).png" id="1_54p1l"]
+[ext_resource type="Script" path="res://scripts/button.gd" id="2_hx0iv"]
+[ext_resource type="Texture2D" uid="uid://dap1rpsmetld5" path="res://assets/Botones/Proyecto nuevo (11) (2).png" id="2_o8h8y"]
+[ext_resource type="Texture2D" uid="uid://7edllc63lde7" path="res://assets/Botones/Proyecto nuevo (11) (3).png" id="3_ekjuf"]
+[ext_resource type="Texture2D" uid="uid://nxtpv1a028gi" path="res://assets/Botones/Proyecto nuevo (11) (4).png" id="4_ge88q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Botons" type="Control" parent="."]
+light_mask = 2
+layout_mode = 3
+anchors_preset = 0
+offset_left = 302.0
+offset_top = 356.0
+offset_right = 459.0
+offset_bottom = 396.0
+script = ExtResource("1_07rrm")
+
+[node name="Talk" type="MenuButton" parent="Botons"]
+layout_mode = 0
+offset_left = -269.0
+offset_top = 38.0
+offset_right = -39.0
+offset_bottom = 117.0
+scale = Vector2(0.739197, 0.826697)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+icon = ExtResource("1_54p1l")
+item_count = 1
+popup/item_0/text = "Venezuela"
+popup/item_0/id = 0
+script = ExtResource("2_hx0iv")
+
+[node name="Act" type="MenuButton" parent="Botons"]
+layout_mode = 0
+offset_left = -63.0
+offset_top = 38.0
+offset_right = 167.0
+offset_bottom = 117.0
+scale = Vector2(0.739197, 0.826697)
+text = "Act"
+icon = ExtResource("2_o8h8y")
+
+[node name="Cam" type="MenuButton" parent="Botons"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 38.0
+offset_right = 373.0
+offset_bottom = 117.0
+scale = Vector2(0.739197, 0.826697)
+icon = ExtResource("4_ge88q")
+
+[node name="Object" type="MenuButton" parent="Botons"]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 38.0
+offset_right = 583.0
+offset_bottom = 117.0
+scale = Vector2(0.739197, 0.826697)
+icon = ExtResource("3_ekjuf")

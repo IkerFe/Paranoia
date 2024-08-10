@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckgjrcuir345r"]
+
+[ext_resource type="Script" path="res://scripts/swinchScene.gd" id="1_hceqj"]
+
+[sub_resource type="GDScript" id="GDScript_h6kdr"]
+script/source = "extends Control  # Asegúrate de que esto coincide con tu nodo principal (puede ser Control, Node2D, etc.)
+
+# Función que se ejecuta cuando se presiona el botón
+func _on_Button_pressed():
+	var next_scene = \"res://scenes/next_scene.tscn\"  # Ruta a la siguiente escena
+	var scene = load(next_scene)  # Cargar la siguiente escena
+	get_tree().change_scene_to(scene)  # Cambiar a la siguiente escena
+
+# Conexión de la señal del botón en la función _ready()
+func _ready():
+	$Button.connect(\"pressed\", Callable(self, \"_on_Button_pressed\"))
+"
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_h6kdr")
+
+[node name="Button_English" type="Button" parent="."]
+offset_left = 369.0
+offset_top = 70.0
+offset_right = 498.0
+offset_bottom = 123.0
+text = "English"
+
+[node name="Button_Spanish" type="Button" parent="."]
+offset_left = 369.0
+offset_top = 145.0
+offset_right = 497.0
+offset_bottom = 201.0
+text = "Español"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 373.0
+offset_top = 279.0
+offset_right = 498.0
+offset_bottom = 339.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_Spanish2" type="Button" parent="."]
+z_index = -1
+offset_left = 369.0
+offset_top = 281.0
+offset_right = 497.0
+offset_bottom = 337.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_hceqj")
