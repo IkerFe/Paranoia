@@ -51,19 +51,7 @@ func _on_mouse_exited():
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and Global.InspectObject:
 		clicked = !clicked
-		if clicked:
-			_add_unlocked_option()
 
-func _add_unlocked_option():
-	# Añade una nueva opción al PopupMenu con el nombre de `text_message_unlocked`
-	if text_message_unlocked != "":
-		# Verificar que la opción no se haya añadido previamente
-		if not popup_menu.has_item(text_message_unlocked):
-			var new_id = popup_menu.get_item_count() + 1
-			popup_menu.add_item(text_message_unlocked, new_id)
-			print("Opción añadida: %s" % text_message_unlocked)
 
-func _on_item_pressed(id: int):
-	# Manejar la selección de opciones en el PopupMenu
-	var selected_text = popup_menu.get_item_text(id)
-	print("%s seleccionada" % selected_text)
+
+
