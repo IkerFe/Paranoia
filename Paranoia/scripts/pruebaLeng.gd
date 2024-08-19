@@ -1,6 +1,6 @@
 extends Control
 
-var current_language = "en"
+var current_language = "es"
 
 func _ready():
 	# Conecta los botones para cambiar el idioma usando Callable

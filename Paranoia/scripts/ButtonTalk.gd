@@ -42,13 +42,13 @@ func _on_item_pressed(id: int):
 	match id:
 		0:
 			print("Opción 0 seleccionada")
-			popup_menu.add_item("StartDialogue2", 2)
-			popup_menu.add_item("StartDialogue3", 3)
+			popup_menu.add_item("Patata", 2)
+			popup_menu.add_item("Patata2", 3)
 		1:
 			print("Opción 1 seleccionada")
 			for i in range(popup_menu.get_item_count()):
 				popup_menu.set_item_disabled(i, true)
-				popup_menu.set_item_visible(i, false)
+				# popup_menu.set_item_visible(i, false)
 			
 			# Agregar nuevas opciones
 			popup_menu.add_item("StartDialogue1.1", 0)
