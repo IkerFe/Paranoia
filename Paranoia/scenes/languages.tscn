@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ckgjrcuir345r"]
 
 [ext_resource type="Script" path="res://scripts/swinchScene.gd" id="1_mke0p"]
-[ext_resource type="Script" path="res://scripts/pruebaLeng.gd" id="2_s7guf"]
+[ext_resource type="Script" path="res://scripts/translate.gd" id="2_s7guf"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -54,5 +54,6 @@ offset_left = 370.0
 offset_top = 280.0
 offset_right = 495.0
 offset_bottom = 340.0
+text = "Continue"
 horizontal_alignment = 1
 vertical_alignment = 1

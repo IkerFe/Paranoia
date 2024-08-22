@@ -26,24 +26,19 @@ func _on_button_pressed():
 		# Determina el tamaño de la pantalla
 	var screen_size = get_viewport().get_visible_rect().size
 
-	# Determina el tamaño del popup
-
 	# Calcula la posición a la izquierda
 	var position = Vector2(10, screen_size.y / 2 - popup_size.y / 2) # Centrado verticalmente, a la izquierda
 
 	# Establece la posición
 	popup_menu.set_position(position)
 
-
-
-
 func _on_item_pressed(id: int):
 	popup_menu.popup_centered()
 	match id:
 		0:
 			print("Opción 0 seleccionada")
-			popup_menu.add_item("Patata", 2)
-			popup_menu.add_item("Patata2", 3)
+			popup_menu.add_item("StartDialogue1.1.1", 2)
+			popup_menu.add_item("StartDialogue1.1.2", 3)
 		1:
 			print("Opción 1 seleccionada")
 			for i in range(popup_menu.get_item_count()):

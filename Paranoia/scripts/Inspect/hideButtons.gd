@@ -16,4 +16,5 @@ func handle_button_press():
 		button2.visible =! button2.visible
 		button3.visible =! button3.visible
 		button4.visible =! button4.visible
-		button_new.visible =! button_new.visible
+		if Global.Dialogue == false:
+			button_new.visible =! button_new.visible
