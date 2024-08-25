@@ -6,11 +6,10 @@ var dialogue = []
 # Índice del diálogo actual
 var numActualDialogue = 0
 
-
-# Referencia al Label que mostrará el diálogo
-@onready var dialogueProtagonist = $Dialogue
+# Referencia al RichTextLabel que mostrará el diálogo
+@export var dialogueProtagonist: RichTextLabel
 # Para ocultarlo
-@onready var node_script = $HideScript
+@onready var hide_script = $HideScript
 
 func _ready():
 	# Mostrar el primer diálogo al inicio
@@ -24,26 +23,43 @@ func _ready():
 				"FirstDialogue1.4",
 				"FirstDialogue1.5",
 			]
-	dialogueProtagonist.text = dialogue[numActualDialogue]
-	Global.Dialogue = true
-	if node_script:
-		node_script.handle_button_press()
+		2:
+			dialogue = [
+				"FirstDialogue2",
+				"FirstDialogue2.1",
+				"FirstDialogue2.2",
+			]
 	
+	update_dialogue_text()
 
-# Función que se ejecuta cuando detecta una entrada táctil o clic
+	Global.Dialogue = true
+	if hide_script:
+		hide_script.handle_button_press()
+
 func _input(event):
 	if event.is_pressed() and (event is InputEventMouseButton or event is InputEventScreenTouch):
 		avanzar_dialogo()
 
-# Función para avanzar el diálogo
 func avanzar_dialogo():
-	# Aumentar el índice del diálogo actual
-	numActualDialogue += 1
-		
 	# Si hay más diálogos disponibles, actualiza el texto
-	if numActualDialogue < dialogue.size():
-		dialogueProtagonist.text = dialogue[numActualDialogue]
+	if numActualDialogue < dialogue.size() - 1:
+		numActualDialogue += 1
+		print(numActualDialogue)
+		update_dialogue_text()
 	else:
-		node_script.handle_button_press()
-		Global.Dialogue = false
-		queue_free()  # O destruir la escena de diálogo
+		match Global.NumDialogue:
+			1:
+				dialogueProtagonist.visible = false
+				var popUp_script = $"PopUpScript"
+				if popUp_script:
+					popUp_script.popUpAppear()
+			2:
+				hide_script.handle_button_press()
+				Global.Dialogue = false
+				queue_free()
+
+# Función para actualizar el texto traducido en el RichTextLabel
+func update_dialogue_text():
+	# Traducir la clave antes de asignarla al RichTextLabel
+	var translated_text = tr(dialogue[numActualDialogue])
+	dialogueProtagonist.bbcode_text = "[color=red]" + translated_text + "[/color]"

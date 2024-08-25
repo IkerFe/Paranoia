@@ -8,6 +8,6 @@ func _on_Button_pressed():
 	# Cambiar el valor de InspectObject a true
 	Global.InspectObject = true
 	
-	var node_script = $"../HideScript"
-	if node_script:
-		node_script.handle_button_press()
+	var hide_script = $"../HideScript"
+	if hide_script:
+		hide_script.handle_button_press()
