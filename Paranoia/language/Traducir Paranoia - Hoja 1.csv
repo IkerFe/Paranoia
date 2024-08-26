@@ -23,10 +23,8 @@ StartAnswear3.1.2,For that reason.,Por eso.
 StartAnswear3.1.3,"I can’t answer you. You appeared on your own, so I don’t know the reason.",No te puedo responder. Has aparecido por tu propia cuenta por lo que no sé el motivo.
 StartDialogue4,Who are you?,Quién eres?
 StartAnswear4,"Finally, a good question.",Por fin una buena pregunta.
-StartAnswear4.1,"I am me, just like you are you. If you weren’t you, I wouldn’t be having a conversation with you.","Yo soy yo, al igual que tú eres tú, si tú no fueras tú ya no estaría teniendo 
-una conversación contigo."
-StartAnswear4.2,"Also, if I weren’t me, we wouldn’t be having this conversation. It’s a mutual thing. Do you understand?","Al igual que si yo no fuera yo no estaríamos teniendo esta conversación. 
-Es algo mutuo. Entiendes?"
+StartAnswear4.1,"I am me, just like you are you. If you weren’t you, I wouldn’t be having a conversation with you.","Yo soy yo, al igual que tú eres tú, si tú no fueras tú ya no estaría teniendo una conversación contigo."
+StartAnswear4.2,"Also, if I weren’t me, we wouldn’t be having this conversation. It’s a mutual thing. Do you understand?",Al igual que si yo no fuera yo no estaríamos teniendo esta conversación. Es algo mutuo. Entiendes?
 StartDialogue4.1,Okay.,Ok.
 StartAnswear4.1.1,Pleasured to be of help.,Encantada de ser de ayuda.
 StartDialogue4.2,That doesn’t answer my question.,Eso no responde mi pregunta.
@@ -37,12 +35,11 @@ StartAnswear4.2.1.2,"Oh, no…",A no…
 StartAnswear4.2.1.3,Let’s just say that all you need to know is that I’m here for you.,Digamos que todo lo que debes saber es que estoy aquí para tí.
 StartDialogue5,Can I get out?,Puedo salir?
 StartAnswear5,N O,N O
-FirstDialogue1,,Bienvenidos hijos de p#$$@.
-FirstDialogue1.1,,Pero que mier&@.
-FirstDialogue1.2,,Que?
+FirstDialogue1,Welcome mother ,Bienvenidos hijos de
+FirstDialogue1.1,What the ,Pero que
+FirstDialogue1.2,What?,Que?
 FirstDialogue1.3,,Porque me censura esto?
-FirstDialogue1.4,,"A ver el juego contiene todos estos temas, a que defici€%$€ m€%$@l 
-se le ocurre hacerlo para menores de 16 años?"
+FirstDialogue1.4,,"A ver el juego contiene todos estos temas, a que defici€%$€ m€%$@l se le ocurre hacerlo para menores de 16 años?"
 FirstDialogue1.5,,Aish.
 ContractUnderAge,,"“Por la presente declaró que tengo más de 18 años. Permitiendo la utilización 
 de lenguaje inapropiado, escenas de violencia, utilización de representaciones 
@@ -77,3 +74,5 @@ NegativeFreeArchive1.1,,Asumo que no querrás hacer el 100%.
 NegativeFreeArchive1.2,,"Y no, no hay vuelta atrás, el juego ya a guardado."
 NegativeFreeArchive1.3,,Te has condenado.
 NegativeFreeArchive1.4,,Pendejo.
+perra,f✓©¢€®$,p€®®@.
+mierda,f✓©¢,mier&@.
