@@ -29,7 +29,7 @@ func update_dialogue_text(dialogueProtagonist: RichTextLabel) -> void:
 	# Traducir la clave antes de asignarla al RichTextLabel
 		#print("OrderDialogue Value: ", Global.OrderDialogue)  # Verifica el valor actual
 		var translated_text = tr(Dialogue[NumActualDialogue])
-		dialogueProtagonist.bbcode_text = translated_text
+		dialogueProtagonist.bbcode_text = "[color=green]" + translated_text + "[/color]"
 
 func avanzar_dialogo(dialogueProtagonist: RichTextLabel):
 	# Si hay más diálogos disponibles, actualiza el texto
