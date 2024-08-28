@@ -4,7 +4,6 @@ extends Node
 @export var yesButton : Button
 @export var noButton : Button
 @export var popUpText: RichTextLabel
-var numActualDialogue = 0
 func popUpAppear():
 	popUp.visible = true
 	yesButton.visible = true
@@ -20,7 +19,7 @@ func popUpDisappear():
 func _ready():
 	match Global.OrderDialogue:
 		1:
-			Global.dialogue = [
+			Global.Dialogue = [
 				"ContractUnderAge",
 			]
-	Global.update_dialogue_text(popUpText, numActualDialogue)
+	Global.update_dialogue_text(popUpText)

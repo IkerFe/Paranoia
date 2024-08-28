@@ -1,0 +1,284 @@
+[gd_scene load_steps=27 format=3 uid="uid://bt2ollxjitok6"]
+
+[ext_resource type="Script" path="res://scripts/global.gd" id="1_lqjhv"]
+[ext_resource type="Script" path="res://scripts/ButtonTalk.gd" id="1_ndl6i"]
+[ext_resource type="Script" path="res://scripts/Inspect/inspect.gd" id="2_31hqj"]
+[ext_resource type="Script" path="res://scripts/Inspect/hideButtons.gd" id="3_233uq"]
+[ext_resource type="Script" path="res://scripts/Inspect/stopInspect.gd" id="3_d85mh"]
+[ext_resource type="Script" path="res://scripts/Inspect/selectObject.gd" id="3_q1ynn"]
+[ext_resource type="Texture2D" uid="uid://bdbjxxcg3oekr" path="res://assets/prueb1.png" id="6_sp7hb"]
+[ext_resource type="Texture2D" uid="uid://c27v4v3ghsxoy" path="res://assets/prueb2.png" id="7_7cddo"]
+[ext_resource type="Texture2D" uid="uid://cixuwr3s7ii5e" path="res://assets/background.png" id="8_lx6n2"]
+[ext_resource type="Texture2D" uid="uid://cyhkbgg3xw0g8" path="res://assets/window.png" id="9_87m1q"]
+[ext_resource type="Texture2D" uid="uid://bks7h4lp6k4yv" path="res://assets/table.png" id="10_j7gyu"]
+[ext_resource type="Texture2D" uid="uid://b4ihyifd73qnx" path="res://assets/bed.png" id="11_ihq3d"]
+[ext_resource type="Texture2D" uid="uid://n02y35xxy4fi" path="res://assets/box.png" id="12_ka81t"]
+[ext_resource type="Texture2D" uid="uid://bbt05s2f6de0b" path="res://assets/break.png" id="13_7k7cu"]
+[ext_resource type="Texture2D" uid="uid://cu0m61x58ekph" path="res://assets/chair.png" id="14_ds5uh"]
+[ext_resource type="Texture2D" uid="uid://nl600aomwt4s" path="res://assets/keyboard.png" id="15_vbqir"]
+[ext_resource type="Texture2D" uid="uid://hjhjr28ectbw" path="res://assets/mouse CHANGE.png" id="16_uqhjp"]
+[ext_resource type="Texture2D" uid="uid://2lbl5lg6qamy" path="res://assets/screen.png" id="17_mp1ts"]
+[ext_resource type="Texture2D" uid="uid://dur2iq02o7813" path="res://assets/speaker.png" id="18_qp6i4"]
+[ext_resource type="Script" path="res://scripts/She.gd" id="19_lwa40"]
+[ext_resource type="Texture2D" uid="uid://p7yxfl0s2n74" path="res://assets/light.png" id="20_rhj0t"]
+[ext_resource type="Texture2D" uid="uid://b78bbgwr8ppdv" path="res://assets/recuadroTexto.png" id="22_tcwrw"]
+[ext_resource type="Script" path="res://scripts/popUp.gd" id="23_eb1w8"]
+[ext_resource type="Script" path="res://scenes/ButtonYesPopUp.gd" id="23_icxp5"]
+[ext_resource type="Script" path="res://scripts/protagonistTextVisible.gd" id="25_ssu0x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8sv1"]
+size = Vector2(550.944, 472.398)
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(0.955, 0.955)
+script = ExtResource("1_lqjhv")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(453.138, 254.04)
+scale = Vector2(0.632727, 0.632727)
+texture = ExtResource("8_lx6n2")
+
+[node name="Window" type="Sprite2D" parent="."]
+position = Vector2(89.0052, 141.361)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("9_87m1q")
+
+[node name="Table" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(154.974, 316.23)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("10_j7gyu")
+
+[node name="Bed" type="Sprite2D" parent="."]
+position = Vector2(748.691, 265.969)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("11_ihq3d")
+
+[node name="Box" type="Sprite2D" parent="."]
+position = Vector2(306.806, 277.487)
+scale = Vector2(0.505081, 0.505081)
+texture = ExtResource("12_ka81t")
+
+[node name="Break" type="Sprite2D" parent="."]
+position = Vector2(682.723, 104.712)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("13_7k7cu")
+
+[node name="Chair" type="Sprite2D" parent="."]
+position = Vector2(450.262, 281.675)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("14_ds5uh")
+
+[node name="Keyboard" type="Sprite2D" parent="."]
+position = Vector2(154.974, 269.11)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("15_vbqir")
+
+[node name="MouseChange" type="Sprite2D" parent="."]
+position = Vector2(165.445, 234.555)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("16_uqhjp")
+
+[node name="Screen" type="Sprite2D" parent="."]
+position = Vector2(129.843, 191.623)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("17_mp1ts")
+
+[node name="Speaker" type="Sprite2D" parent="."]
+position = Vector2(114.136, 273.298)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("18_qp6i4")
+
+[node name="Speaker2" type="Sprite2D" parent="."]
+position = Vector2(148.997, 220.571)
+scale = Vector2(0.562881, 0.562881)
+texture = ExtResource("18_qp6i4")
+
+[node name="Light" type="Sprite2D" parent="."]
+position = Vector2(450.262, 28.2723)
+scale = Vector2(0.633, 0.633)
+texture = ExtResource("20_rhj0t")
+
+[node name="Buttons" type="Control" parent="."]
+light_mask = 2
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 0
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Talk" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.219895
+anchor_right = 0.219895
+offset_left = 35.0
+offset_top = 355.0
+offset_right = 198.0
+offset_bottom = 417.0
+text = "Talk"
+script = ExtResource("1_ndl6i")
+metadata/_edit_use_anchors_ = true
+
+[node name="Inspect" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.32016
+anchor_top = 0.0206818
+anchor_right = 2.32016
+anchor_bottom = 0.0206818
+offset_left = 35.0
+offset_top = 355.0
+offset_right = 198.0
+offset_bottom = 417.0
+text = "Inspect"
+script = ExtResource("2_31hqj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sleep" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.219895
+anchor_right = 0.219895
+offset_left = 451.0
+offset_top = 355.0
+offset_right = 614.0
+offset_bottom = 417.0
+text = "Sleep"
+metadata/_edit_use_anchors_ = true
+
+[node name="?" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.219896
+anchor_right = 0.219896
+offset_left = 659.0
+offset_top = 355.0
+offset_right = 822.0
+offset_bottom = 417.0
+text = "No se"
+metadata/_edit_use_anchors_ = true
+
+[node name="X" type="Button" parent="Buttons"]
+visible = false
+layout_mode = 0
+offset_left = 824.084
+offset_top = 28.2723
+offset_right = 867.084
+offset_bottom = 64.2722
+text = "X"
+script = ExtResource("3_d85mh")
+
+[node name="HideScript" type="Node" parent="Buttons" node_paths=PackedStringArray("button1", "button2", "button3", "button4", "button_new")]
+script = ExtResource("3_233uq")
+button1 = NodePath("../Talk")
+button2 = NodePath("../Sleep")
+button3 = NodePath("../?")
+button4 = NodePath("../Inspect")
+button_new = NodePath("../X")
+
+[node name="Prueb1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(353.927, 72.2513)
+scale = Vector2(0.181507, 0.181507)
+texture = ExtResource("6_sp7hb")
+script = ExtResource("3_q1ynn")
+default_texture = ExtResource("6_sp7hb")
+hover_texture = ExtResource("7_7cddo")
+text_message_unlocked = "Cuchillo"
+
+[node name="Area2D" type="Area2D" parent="Prueb1"]
+position = Vector2(-23.0761, 46.1523)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Prueb1/Area2D"]
+position = Vector2(17.3071, -98.0737)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_g8sv1")
+
+[node name="SheText" type="Control" parent="." node_paths=PackedStringArray("dialogueProtagonist", "backgroundDialogueProtagonist")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.18848
+offset_top = 4.18848
+offset_right = 180.188
+offset_bottom = 67.1885
+script = ExtResource("19_lwa40")
+dialogueProtagonist = NodePath("Dialogue")
+backgroundDialogueProtagonist = NodePath("BackgoundProtagonist")
+
+[node name="BackgoundProtagonist" type="Sprite2D" parent="SheText"]
+position = Vector2(449.215, 151.832)
+scale = Vector2(0.404373, 0.404373)
+texture = ExtResource("22_tcwrw")
+
+[node name="HideScript" type="Node" parent="SheText" node_paths=PackedStringArray("button1", "button2", "button3", "button4", "button_new")]
+script = ExtResource("3_233uq")
+button1 = NodePath("../../Buttons/Talk")
+button2 = NodePath("../../Buttons/Sleep")
+button3 = NodePath("../../Buttons/?")
+button4 = NodePath("../../Buttons/Inspect")
+button_new = NodePath("../../Buttons/X")
+
+[node name="BackroundPopUp" type="Sprite2D" parent="SheText"]
+visible = false
+position = Vector2(448.168, 214.66)
+scale = Vector2(0.636452, 0.63114)
+texture = ExtResource("22_tcwrw")
+
+[node name="ButtonNo" type="Button" parent="SheText"]
+visible = false
+layout_mode = 0
+offset_left = 240.0
+offset_top = 375.22
+offset_right = 336.0
+offset_bottom = 423.22
+text = "No"
+
+[node name="ButtonYes" type="Button" parent="SheText"]
+visible = false
+layout_mode = 0
+offset_left = 555.183
+offset_top = 369.984
+offset_right = 651.183
+offset_bottom = 417.984
+text = "Yes"
+script = ExtResource("23_icxp5")
+
+[node name="PopUpScript" type="Node" parent="SheText" node_paths=PackedStringArray("popUp", "yesButton", "noButton", "popUpText")]
+script = ExtResource("23_eb1w8")
+popUp = NodePath("../BackroundPopUp")
+yesButton = NodePath("../ButtonYes")
+noButton = NodePath("../ButtonNo")
+popUpText = NodePath("../TextPopUp")
+
+[node name="Dialogue" type="RichTextLabel" parent="SheText"]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 88.0
+offset_right = 844.0
+offset_bottom = 288.0
+scale = Vector2(0.736096, 0.643232)
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 10
+theme_override_font_sizes/italics_font_size = 0
+theme_override_font_sizes/bold_italics_font_size = 0
+bbcode_enabled = true
+
+[node name="TextPopUp" type="RichTextLabel" parent="SheText"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 105.0
+offset_right = 824.0
+offset_bottom = 322.0
+bbcode_enabled = true
+
+[node name="TextProta" type="Node" parent="SheText" node_paths=PackedStringArray("text", "background")]
+script = ExtResource("25_ssu0x")
+text = NodePath("../Dialogue")
+background = NodePath("../BackgoundProtagonist")

@@ -8,8 +8,12 @@ func protagonistTextDisappear():
 	background.visible = false
 	
 func protagonistTextAppear():
-	Global.OrderDialogue = 2
-	Global.numActualDialogue = 0
+	Global.EndDialogue = false
+	Global.OrderDialogue += 1
+	Global.NumActualDialogue = -1
+	Global.TextDialogueProta()
+	Global.avanzar_dialogo(text)
 	text.visible = true
 	background.visible = true
+	Global.DialogueActive = true
 
