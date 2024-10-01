@@ -12,9 +12,9 @@ func popUpAppear():
 	
 func popUpDisappear():
 	popUp.visible = false
-	yesButton.visible = false
 	noButton.visible = false
 	popUpText.visible = false
+
 
 func _ready():
 	match Global.OrderDialogue:

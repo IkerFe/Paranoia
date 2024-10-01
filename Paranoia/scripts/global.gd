@@ -24,12 +24,18 @@ func TextDialogueProta():
 				"FirstDialogue2.1",
 				"FirstDialogue2.2",
 			]
+		3:
+			Dialogue = [
+				"NameSelector1.1",
+				"NameSelector1.2"
+			]
+			
 # Función para actualizar el texto traducido en el RichTextLabel
 func update_dialogue_text(dialogueProtagonist: RichTextLabel) -> void:
-	# Traducir la clave antes de asignarla al RichTextLabel
-		#print("OrderDialogue Value: ", Global.OrderDialogue)  # Verifica el valor actual
-		var translated_text = tr(Dialogue[NumActualDialogue])
-		dialogueProtagonist.bbcode_text = "[color=green]" + translated_text + "[/color]"
+	var translated_text = tr(Dialogue[NumActualDialogue])
+	dialogueProtagonist.bbcode_text = "[color=yellow]" + translated_text + "[/color]"
+
+
 
 func avanzar_dialogo(dialogueProtagonist: RichTextLabel):
 	# Si hay más diálogos disponibles, actualiza el texto
