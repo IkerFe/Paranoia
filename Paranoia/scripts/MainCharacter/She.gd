@@ -31,7 +31,6 @@ func end_dialogue():
 				var popUp_script = $"PopUpScript"
 				popUp_script.popUpAppear()
 			2:
-				Global.DialogueActive = false
 				var textProta = $"TextProta"
 				textProta.endProtagonistGrupText()
 				
@@ -50,4 +49,5 @@ func end_dialogue():
 				if(showButtonsInsert.endStartDialogue == true):
 					var showButtons = $"HideScript"
 					showButtons.handle_button_press()
+					Global.DialogueActive = false
 					queue_free()

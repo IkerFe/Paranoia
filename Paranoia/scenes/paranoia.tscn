@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bt2ollxjitok6"]
+[gd_scene load_steps=33 format=3 uid="uid://bt2ollxjitok6"]
 
 [ext_resource type="Script" path="res://scripts/global.gd" id="1_lqjhv"]
 [ext_resource type="Script" path="res://scripts/ButtonTalk.gd" id="1_ndl6i"]
@@ -30,6 +30,9 @@
 [ext_resource type="Script" path="res://scripts/InsertText/playerInsertText.gd" id="26_3y6w7"]
 [ext_resource type="Script" path="res://scripts/InsertText/ButtonInsertTextYes.gd" id="27_oge5b"]
 [ext_resource type="Script" path="res://scripts/controlYes&No.gd" id="28_d38lv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjv27"]
+size = Vector2(211.347, 158.689)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8sv1"]
 size = Vector2(550.944, 472.398)
@@ -67,6 +70,13 @@ texture = ExtResource("12_ka81t")
 script = ExtResource("3_q1ynn")
 default_texture = ExtResource("12_ka81t")
 hover_texture = ExtResource("8_4xcta")
+
+[node name="Area2D" type="Area2D" parent="Box"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Box/Area2D"]
+position = Vector2(9.54291, 2.54266)
+rotation = 0.359538
+shape = SubResource("RectangleShape2D_bjv27")
 
 [node name="Break" type="Sprite2D" parent="."]
 position = Vector2(682.723, 104.712)
@@ -198,7 +208,6 @@ texture = ExtResource("6_sp7hb")
 script = ExtResource("3_q1ynn")
 default_texture = ExtResource("6_sp7hb")
 hover_texture = ExtResource("7_7cddo")
-text_message_unlocked = "Cuchillo"
 
 [node name="Area2D" type="Area2D" parent="Prueb1"]
 position = Vector2(-23.0761, 46.1523)
@@ -329,6 +338,7 @@ script = ExtResource("28_d38lv")
 
 [node name="ButtonNo" type="Button" parent="SheText"]
 visible = false
+layout_mode = 0
 offset_left = 240.0
 offset_top = 375.22
 offset_right = 336.0
