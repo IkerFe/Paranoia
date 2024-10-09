@@ -26,7 +26,7 @@ window/stretch/mode="canvas_items"
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://language/Traducir Paranoia - Hoja 1.en.translation", "res://language/Traducir Paranoia - Hoja 1.es.translation")
+locale/translations=PackedStringArray("res://language/Traducir Paranoia - Hoja 1 (1).en.translation", "res://language/Traducir Paranoia - Hoja 1 (1).es.translation")
 
 [rendering]
 

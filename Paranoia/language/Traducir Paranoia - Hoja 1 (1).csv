@@ -1,0 +1,90 @@
+key,en,es
+Talk,Talk,Hablar
+Inspect,Inspect,Inspeccionar
+Sleep,Sleep,Dormision
+Stream,Stream,Stream
+Continue,Continue,Continuar
+PlayerStartDialogue1,Where I am?,Donde estoy?
+ProtagonistStartAnswear1,"In my room, obiously. Do you have vision problems?","En mi habitación, evidentemente. Te pasa algo en la vista?"
+PlayerStartDialogue1.1,And where is your room?,Y donde está tú habitación?
+ProtagonistStartAnswear1.1,"In my home. Otherwise, where would it be?",En mi casa. Si no donde iba a estar?
+PlayerStartDialogue1.1.1,Are you serious?,Vas en serio?
+ProtagonistStartAnswear1.1.1,I am always serious bro.,Yo siempre voy en serio.
+PlayerStartDialogue2,How I arrived here?,Como he llegado hasta aquí?
+ProtagonistStartAnswear2,You only appeared.,Solo apareciste.
+PlayerStartDialogue3,How long I have been here?,Cuanto llevo aquí?
+ProtagonistStartAnswear3,HAVE YOU EVER NOT BEEN HERE?,ALGUNA VEZ NO HAS ESTADO AQUÍ?
+PlayerStartDialogue3.1,"Yeah, I’ve always been here.","Ya, yo siempre he estado aquí."
+PlayerStartDialogue3.2,"Look, I don’t think you’re my mom, so I think that yes.","A ver, no creo que seas mí madre por lo que creo que sí."
+ProtagonistStartAnswear3.1,"The past or the future don’t matter, only the present does.","El pasado ni el futuro importan, solo importa el presente."
+PlayerStartDialogue3.2.1,"Earlier, you told me that I appeared, which means I haven’t always been here.",Antes me has dicho que he aparecido por lo que significa que no siempre he estado aquí.
+ProtagonistStartAnswear3.1.1,Yeah.,Ya.
+ProtagonistStartAnswear3.1.2,For that reason.,Por eso.
+ProtagonistStartAnswear3.1.3,"I can’t answer you. You appeared on your own, so I don’t know the reason.",No te puedo responder. Has aparecido por tu propia cuenta por lo que no sé el motivo.
+PlayerStartDialogue4,Who are you?,Quién eres?
+ProtagonistStartAnswear4,"Finally, a good question.",Por fin una buena pregunta.
+ProtagonistStartAnswear4.1,"I am me, just like you are you. If you weren’t you, I wouldn’t be having a conversation with you.","Yo soy yo, al igual que tú eres tú, si tú no fueras tú ya no estaría teniendo una conversación contigo."
+ProtagonistStartAnswear4.2,"Also, if I weren’t me, we wouldn’t be having this conversation. It’s a mutual thing. Do you understand?",Al igual que si yo no fuera yo no estaríamos teniendo esta conversación. Es algo mutuo. Entiendes?
+PlayerStartDialogue4.1,Okay.,Ok.
+ProtagonistStartAnswear4.1.1,Pleasured to be of help.,Encantada de ser de ayuda.
+PlayerStartDialogue4.2,That doesn’t answer my question.,Eso no responde mi pregunta.
+ProtagonistStartAnswear4.2.1,Which question?,Cuál pregunta?
+PlayerStartDialogue4.2.1,Who are you?,Quién eres?
+ProtagonistStartAnswear4.2.1.1,I am you.,Yo soy tú.
+ProtagonistStartAnswear4.2.1.2,"Oh wait, no…",A no…
+ProtagonistStartAnswear4.2.1.3,Let’s just say that all you need to know is that I’m here for you.,Digamos que todo lo que debes saber es que estoy aquí para tí.
+PlayerStartDialogue5,Can I get out?,Puedo salir?
+N O,N O,N O
+FirstDialogue1,Welcome mother ,Bienvenidos hijos de
+FirstDialogue1.1,What the ,Pero que
+FirstDialogue1.2,What?,Que?
+FirstDialogue1.3,,Porque me censura esto?
+FirstDialogue1.4,"Let’s see, the game contains all these themes, what kind of ment#%$* defe%$# would think of making it for under 16s?","A ver el juego contiene todos estos temas, a que defici€%$€ m€%$@l se le ocurre hacerlo para menores de 16 años?"
+FirstDialogue1.5,Sigh.,Aish.
+ContractUnderAge,"“I hereby declare that I am over 18 years old, allowing the use of inappropriate language, scenes of violence, representations of sexual content, use of illicit substances, that may leave scars, be bizarre, evoke emotions commonly associated with negativity (although it's relative whether an emotion is negative, right? At least that movie suggested so), might have some resemblance to reality, might predict some future aspect of any individual’s life (honestly, it’s mind-blowing how easy it is to identify with something and say ‘that’s me’ or relate it to anything, start relating other aspects, and create theories QwQ), some aspect might be changed in the future due to dissatisfaction with its functioning, data loss due to lack of knowledge, removal of features, reading of your computer (maybe?).","“Por la presente declaró que tengo más de 18 años. Permitiendo la utilización 
+de lenguaje inapropiado, escenas de violencia, utilización de representaciones 
+sexuales, uso de sustancias ilícitas, que deje secuelas, sea bizarro, haga sentir
+ emociones comúnmente asociadas a negativas (aunque es relativo si una 
+emoción es negativa, no? Al menos aquella película daba a entender eso), 
+llegue a tener alguna similitud con la realidad, llegar a predecir algún aspecto
+ futuro de cualquier individuo en su vida (para ser sincero es flipante lo fácil que 
+es identificarse con algo y decir “soy ese” o relacionar cualquier cosa, empezar a 
+relacionar otros aspectos y crear teorías QwQ), algún aspecto sea cambiado a 
+futuro por inconformidad de su funcionamiento, perdida de datos por 
+desconocimiento, eliminación de aspectos, lectura de tu ordenador (a lo mejor?).
+
+Aparte de todos los datos anteriormente detallados Tf sftfswb fm efsfdup b efdsj dbvlljfs jogpsnbdjpo.
+
+PD: Si no te gusta el producto, te comprometes a dar una crítica para mejorar el producto y no solo 
+para criticar por criticar. Si haces una crítica sin fundamentos se te puede llegar a retirar los permisos 
+como ser humano… Na, bromi (Porque no puedo, evidentemente).”"
+FirstDialogue2,,Gracias por eximirrme de cualquier responsabilidad futura.
+FirstDialogue2.1,,Yo también te quiero. Pues supongo que podemos comenzar.
+FirstDialogue2.2,,"A es verdad con esto de liberarme legalmente de cualquier responsabilidad 
+se me olvidó preguntarte el nombre."
+NameSelector1,,Introduce tu nombre
+NameSelector1.1,,Igualmente no tendrá gran relevancia pero…
+NameSelector1.2,,Estás seguro que ese es tu nombre?
+NameSelector1.3,,"Bonito nombre, encantada de conocerte ."
+Yes,Yes.,Sí.
+No,No.,No.
+FreeArchive1,,Quieres un logro gratis?
+NegativeFreeArchive1,,"Pues bueno, tú te lo pierdes."
+NegativeFreeArchive1.1,,Asumo que no querrás hacer el 100%.
+NegativeFreeArchive1.2,,"Y no, no hay vuelta atrás, el juego ya a guardado."
+NegativeFreeArchive1.3,,Te has condenado.
+NegativeFreeArchive1.4,,Pendejo.
+perra,f✓©¢€®$,p€®®@
+mierda,f✓©¢,mier&@
+Correct,Confirmed,Confirmado
+PlayerPicture1,,Quienes son los del cuadro?
+ProtagonistPicture1,,Qué cuadro.
+PlayerPicture2,,El que había detrás tuyo.
+ProtagonistPicture2,,Yo no veo nada.
+PlayerPicture5,,Bueno si tú lo dices
+ProtagonistPicture6,,Me agrada que empieces a entender que yo siempre tengo la razón.
+PlayerPicture7,,Desgraciada lo acabas de esconder
+ProtagonistPicture8,,Na.
+PlayerWindow1,,"Hace un bonito día, no te apetece salir?"
+ProtagonistWindow1,,"Na, ya estoy bien aquí. La gente de allí fuera no es como que me aporte mucho."
+ProtagonistWindow2,,Además que tengo todo lo que me importa aquí.

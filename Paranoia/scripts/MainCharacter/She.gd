@@ -21,11 +21,9 @@ func _input(event):
 	or event is InputEventKey and (event.keycode == KEY_ENTER or event.keycode == KEY_SPACE)):
 		Global.avanzar_dialogo(dialogueProtagonist)
 
-
-
 func end_dialogue():
 		match Global.OrderDialogue:
-			4:
+			1:
 				var textProta = $"TextProta"
 				textProta.protagonistTextDisappear()
 				var popUp_script = $"PopUpScript"
@@ -41,13 +39,21 @@ func end_dialogue():
 				insertText.showPlayerInsertText()
 				
 				
-			1: 
-				var showButtonsInsert = $"ButtonYesInsertText"
-				var showInsertButtons = $"ControlYes&No"
-				showInsertButtons.show_buttons("ButtonYesInsertText","ButtonNoInsertText")
-				
-				if(showButtonsInsert.endStartDialogue == true):
-					var showButtons = $"HideScript"
-					showButtons.handle_button_press()
-					Global.DialogueActive = false
-					queue_free()
+			4: 
+				if Global.DialogueActive:
+					var showButtonsInsert = $"ButtonYesInsertText"
+					
+					var showInsertButtons = $"ControlYes&No"
+					showInsertButtons.show_buttons("ButtonYesInsertText","ButtonNoInsertText")
+					
+					if showButtonsInsert.endStartDialogue:
+						var showButtons = $"HideScript"
+						showButtons.handle_button_press()
+						
+						var textProta = $"TextProta"
+						textProta.protagonistTextDisappear()
+						
+						showInsertButtons.hide_buttons("ButtonYesInsertText","ButtonNoInsertText")
+			100:
+				var textProta = $"TextProta"
+				textProta.protagonistTextDisappear()

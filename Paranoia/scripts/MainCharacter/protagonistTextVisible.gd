@@ -6,6 +6,7 @@ extends Node
 func protagonistTextDisappear():
 	text.visible = false
 	background.visible = false
+	Global.DialogueActive = false
 
 func endProtagonistGrupText():
 	Global.OrderDialogue += 1
@@ -19,4 +20,5 @@ func protagonistTextAppear():
 	text.visible = true
 	background.visible = true
 	Global.DialogueActive = true
+	
 

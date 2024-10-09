@@ -1,7 +1,7 @@
 extends Node
 
 var  InspectObject: bool = false
-var  DialogueActive: bool = false
+var  DialogueActive: bool = true
 var  EndDialogue: bool = false
 var  OrderDialogue: int = 1
 var  NumActualDialogue:int = -1
@@ -29,7 +29,16 @@ func TextDialogueProta():
 				"NameSelector1.1",
 				"NameSelector1.2"
 			]
-			
+		100:
+			Dialogue = [
+				"ProtagonistWindow1",
+				"ProtagonistWindow2"
+			]
+		101:
+			Dialogue = [
+				"Me muero",
+				"A Y U D A  :C"
+			]
 # Función para actualizar el texto traducido en el RichTextLabel
 func update_dialogue_text(dialogueProtagonist: RichTextLabel) -> void:
 	var translated_text = tr(Dialogue[NumActualDialogue])
@@ -42,6 +51,6 @@ func avanzar_dialogo(dialogueProtagonist: RichTextLabel):
 	if Global.NumActualDialogue < Global.Dialogue.size() - 1 :
 		Global.NumActualDialogue += 1
 		update_dialogue_text(dialogueProtagonist)
-		print("OrderDialogue Value: ", Global.NumActualDialogue)  # Verifica el valor actual
+		#print("OrderDialogue Value: ", Global.NumActualDialogue)  # Verifica el valor actual
 	else:
 		EndDialogue = true

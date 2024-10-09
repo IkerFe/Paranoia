@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bt2ollxjitok6"]
+[gd_scene load_steps=34 format=3 uid="uid://bt2ollxjitok6"]
 
 [ext_resource type="Script" path="res://scripts/global.gd" id="1_lqjhv"]
 [ext_resource type="Script" path="res://scripts/ButtonTalk.gd" id="1_ndl6i"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://scripts/Inspect/hideButtons.gd" id="3_233uq"]
 [ext_resource type="Script" path="res://scripts/Inspect/stopInspect.gd" id="3_d85mh"]
 [ext_resource type="Script" path="res://scripts/Inspect/selectObject.gd" id="3_q1ynn"]
+[ext_resource type="Texture2D" uid="uid://tsb6kj25rt73" path="res://assets/windowSelected.png" id="5_qilue"]
 [ext_resource type="Texture2D" uid="uid://bdbjxxcg3oekr" path="res://assets/prueb1.png" id="6_sp7hb"]
 [ext_resource type="Texture2D" uid="uid://c27v4v3ghsxoy" path="res://assets/prueb2.png" id="7_7cddo"]
 [ext_resource type="Texture2D" uid="uid://bg8d3nkggdry3" path="res://assets/boxColider.png" id="8_4xcta"]
@@ -31,11 +32,11 @@
 [ext_resource type="Script" path="res://scripts/InsertText/ButtonInsertTextYes.gd" id="27_oge5b"]
 [ext_resource type="Script" path="res://scripts/controlYes&No.gd" id="28_d38lv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjv27"]
-size = Vector2(211.347, 158.689)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8sv1"]
 size = Vector2(550.944, 472.398)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjv27"]
+size = Vector2(211.333, 161.359)
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2(0.955, 0.955)
@@ -47,11 +48,6 @@ position = Vector2(453.138, 254.04)
 scale = Vector2(0.632727, 0.632727)
 texture = ExtResource("8_lx6n2")
 
-[node name="Window" type="Sprite2D" parent="."]
-position = Vector2(89.0052, 141.361)
-scale = Vector2(0.633, 0.633)
-texture = ExtResource("9_87m1q")
-
 [node name="Table" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(154.974, 316.23)
@@ -62,21 +58,6 @@ texture = ExtResource("10_j7gyu")
 position = Vector2(748.691, 265.969)
 scale = Vector2(0.633, 0.633)
 texture = ExtResource("11_ihq3d")
-
-[node name="Box" type="Sprite2D" parent="."]
-position = Vector2(306.806, 277.487)
-scale = Vector2(0.505081, 0.505081)
-texture = ExtResource("12_ka81t")
-script = ExtResource("3_q1ynn")
-default_texture = ExtResource("12_ka81t")
-hover_texture = ExtResource("8_4xcta")
-
-[node name="Area2D" type="Area2D" parent="Box"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Box/Area2D"]
-position = Vector2(9.54291, 2.54266)
-rotation = 0.359538
-shape = SubResource("RectangleShape2D_bjv27")
 
 [node name="Break" type="Sprite2D" parent="."]
 position = Vector2(682.723, 104.712)
@@ -344,3 +325,34 @@ offset_top = 375.22
 offset_right = 336.0
 offset_bottom = 423.22
 text = "No"
+
+[node name="Box" type="Sprite2D" parent="SheText"]
+z_index = -1
+position = Vector2(302.618, 273.299)
+scale = Vector2(0.505081, 0.505081)
+texture = ExtResource("12_ka81t")
+script = ExtResource("3_q1ynn")
+default_texture = ExtResource("12_ka81t")
+hover_texture = ExtResource("8_4xcta")
+ID_object = 100
+
+[node name="Area2D" type="Area2D" parent="SheText/Box"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SheText/Box/Area2D"]
+position = Vector2(10.7514, 2.08539)
+rotation = 0.359538
+shape = SubResource("RectangleShape2D_bjv27")
+
+[node name="Window" type="Sprite2D" parent="SheText"]
+z_index = -1
+position = Vector2(84.8167, 137.173)
+scale = Vector2(0.633, 0.633)
+script = ExtResource("3_q1ynn")
+default_texture = ExtResource("9_87m1q")
+hover_texture = ExtResource("5_qilue")
+ID_object = 99
+
+[node name="Area2D" type="Area2D" parent="SheText/Window"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="SheText/Window/Area2D"]
+polygon = PackedVector2Array(-76.094, -4.96223, -72.7856, 243.171, 74.4399, 1.65465, 71.1315, -234.899)

@@ -3,6 +3,7 @@ extends Sprite2D
 # Carga las dos imágenes
 @export var default_texture : Texture2D
 @export var hover_texture : Texture2D
+@export var ID_object : int
 
 # Variable para mantener el estado del clic
 var clicked = false
@@ -35,8 +36,13 @@ func _on_mouse_exited():
 	mouse_over = false
 
 func _on_input_event(_viewport, event, _shape_idx):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and Global.InspectObject:
+	if (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT 
+	and event.pressed and Global.InspectObject and clicked == false):
 		clicked = true
+		Global.OrderDialogue = ID_object;
+		print(ID_object);
+		var textProta = $"../TextProta"
+		textProta.protagonistTextAppear()
 
 
 

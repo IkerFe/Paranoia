@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://h43nmg2dm5mg"
+
+[deps]
+
+files=["res://language/Traducir Paranoia - Hoja 1 (1).en.translation", "res://language/Traducir Paranoia - Hoja 1 (1).es.translation"]
+
+source_file="res://language/Traducir Paranoia - Hoja 1 (1).csv"
+dest_files=["res://language/Traducir Paranoia - Hoja 1 (1).en.translation", "res://language/Traducir Paranoia - Hoja 1 (1).es.translation"]
+
+[params]
+
+compress=true
+delimiter=0
